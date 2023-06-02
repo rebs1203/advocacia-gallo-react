@@ -1,0 +1,33 @@
+.styles1 {
+    margin-top: 100px;
+    background-color: #4aa8ef
+}
+
+.imgStyle {
+    width: 7%;
+    border-radius: 100%;
+    top: 15px
+}
+
+.pStyle {
+    color: white;
+    font-weight: 650
+}
+
+.moreStyles {
+    margin-right: 10px;
+    color: white;
+    font-size: 32px
+}
+
+.evenMoreStyles {
+    margin-left: 10px;
+    color: white;
+    font-size: 32px
+}
+
+@media (max-width: 300px) {
+    .pStyle {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,77 @@
+.nav {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    background-color: #4aa8ef;
+    font-weight: 700;
+}
+
+.logo {
+    position: absolute;
+    z-index: 2;
+    width: 7%;
+    border-radius: 100%;
+    top: 15px;
+    margin-left: -500px;
+}
+
+.nav-elem {
+    text-decoration: none;
+    font-size: 20px;
+    color: #085cbc;
+    margin-left: 5em;
+}
+
+.nav-elem:hover {
+    color: white;
+}
+
+.logo-hamburguer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 10%;
+    border-radius: 100%;
+}
+
+.nav-hamburguer {
+    background-color: #4aa8ef;
+}
+
+.bm-burger-button {
+    position: absolute;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 36px;
+}
+
+.bm-burger-bars {
+    background: #085cbc;
+}
+
+.bm-burger-bars-hover {
+    background: white;
+}
+
+.bm-menu {
+    background: #8dc2eba4;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+}
+
+.bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+}
+
+.menu-item, .menu-item--small {
+    text-decoration: none;
+    color: #085cbc;
+    font-weight: 700;
+    margin-bottom: 36px;
+    font-size: 25px;
+}
+
+.menu-item:hover, .menu-item--small:hover {
+    color: white
+}
