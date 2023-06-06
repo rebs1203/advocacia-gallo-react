@@ -1,4 +1,4 @@
-h2, h3 {
+.areas-title, .elem-title {
     margin-top: 20px;
     margin-bottom: 20px;
     color: #085cbc;
@@ -7,16 +7,16 @@ h2, h3 {
     text-underline-offset: 0.2em; 
 }
 
-h2 {
+.areas-title {
     font-size: 30px;
     margin-bottom: 30px;
 }
 
-h3 {
+.elem-title {
     font-size: 25px;
 }
 
-p {
+.elem-text {
     padding: 20px;
     font-size: 18px;
 }
