@@ -1,0 +1,22 @@
+h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #085cbc;
+    text-decoration: underline;
+    text-decoration-skip-ink: auto;
+    text-underline-offset: 0.2em; 
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+p {
+    padding: 20px;
+    font-size: 18px;
+}
