@@ -17,8 +17,6 @@ const HomeCom = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        console.log(e)
-        console.log(form.current)
         emailjs.sendForm('service_vv853tn', 'template_votbign', form.current, '6AEybsLh57p9ZhWWm')
             .then((result) => {
                 console.log(result.text);

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { stack as Menu } from 'react-burger-menu'
 import useWindowDimensions from '../window'
 import '../styles/nav-bar.css'
@@ -33,10 +34,10 @@ const NavBar = () => {
                     <img src="IMG_1984.jpeg" className='logo'/>
                     <nav className='nav'>
                         <ul>
-                            <a className='nav-elem'>HOME</a>
-                            <a className='nav-elem'>ADVOGADO ONLINE</a>
-                            <a className='nav-elem'>ÁREAS DE ATUAÇÃO</a>
-                            <a className='nav-elem'>CONTATO</a>
+                            <Link className='nav-elem' to='/'>HOME</Link>
+                            <Link className='nav-elem' to='/advogado'>ADVOGADO ONLINE</Link>
+                            <Link className='nav-elem' to='/areas'>ÁREAS DE ATUAÇÃO</Link>
+                            <Link className='nav-elem' to='contato'>CONTATO</Link>
                         </ul>
                     </nav>
                 </div>
@@ -44,10 +45,10 @@ const NavBar = () => {
                 <div className='nav-hamburguer'>
                     <img src="IMG_1984.jpeg" className='logo-hamburguer'/>
                     <Menu>
-                        <a id="home" className="menu-item" href="/">HOME</a>
-                        <a id="about" className="menu-item" href="/about">ADVOGADO ONLINE</a>
-                        <a id="contact" className="menu-item" href="/contact">ÁREAS DE ATUAÇÃO</a>
-                        <a onClick={ (e) => showSettings(e) } className="menu-item--small" href="">CONTATO</a>
+                        <Link id="home" className="menu-item" to="/" >HOME</Link>
+                        <Link id="about" className="menu-item" to="/advogado" >ADVOGADO ONLINE</Link>
+                        <Link id="contact" className="menu-item" to="/areas" >ÁREAS DE ATUAÇÃO</Link>
+                        <Link onChange={ (e) => showSettings(e) } className="menu-item--small" to="/contato" >CONTATO</Link>
                     </Menu>
                 </div>
         }
