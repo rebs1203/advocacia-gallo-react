@@ -24,7 +24,6 @@ const NavBar = () => {
         }
     }, [width])
 
-
     return (
         <div>
             { 
