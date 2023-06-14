@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { stack as Menu } from 'react-burger-menu'
 import useWindowDimensions from '../window'
+import image from '../assets/img_logo.jpeg'
 import '../styles/nav-bar.css'
 
 
@@ -30,7 +31,7 @@ const NavBar = () => {
                 sizeNav
                 ?
                 <div>
-                    <img src="IMG_1984.jpeg" className='logo'/>
+                    <img src={image} className='logo'/>
                     <nav className='nav'>
                         <ul>
                             <Link className='nav-elem' to='/'>HOME</Link>
