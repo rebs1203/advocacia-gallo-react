@@ -29,17 +29,17 @@ const ContatoCom = () => {
 
     return (
         <>
-            <h2>Entre em contato conosco</h2>
+            <h2 className='contact-title'>Entre em contato conosco</h2>
             <div className='wraps-page'>
-                <div>
-                    <FontAwesomeIcon icon={faHeadset} />
-                    <h3>Por telefone</h3>
-                    <p>Telefones de contato (EUA):<br/> +1 (561) 812-9369 e +1 (561) 888-2485<br/><br/>Telefone de contato (BR - Somente WhatsApp):<br/> +55 (27) 99991-4550</p>
+                <div className='phone-block'>
+                    <FontAwesomeIcon className='headset-icon' icon={faHeadset} />
+                    <h3 className='contact-label'>Por telefone</h3>
+                    <p className='contact-text'>Telefones de contato (EUA):<br/> +1 (561) 812-9369 e +1 (561) 888-2485<br/><br/>Telefone de contato (BR - Somente WhatsApp):<br/> +55 (27) 99991-4550</p>
                 </div>
-                <div>
-                    <FontAwesomeIcon icon={faComments} />
-                    <h3>Nos envie uma mensagem</h3>
-                    <Popup contentStyle={{background: '#4aa8ef', width: '50%', maxWidth: '600px'}} arrowStyle={{display: 'none'}} trigger={<button className='button-contato'>Começar</button>} position="top center">
+                <div className='message-block'>
+                    <FontAwesomeIcon className='message-icon' icon={faComments} />
+                    <h3 className='contact-label'>Nos envie uma mensagem</h3>
+                    <Popup contentStyle={{background: '#4aa8ef', width: '50%', maxWidth: '600px'}} arrowStyle={{display: 'none'}} trigger={<button className='contact-button'>Começar</button>} position="top center">
                         <div style={{display: 'flex', flexDirection: "column"}}>
                             <form ref={form} onSubmit={sendEmail}>
                                 <Input startDecorator={<FontAwesomeIcon icon={faFileSignature} style={{color: '#085cbc'}} />} color="neutral" size="md" placeholder='Nome' name="user_name"/><br/>

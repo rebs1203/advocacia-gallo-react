@@ -2,3 +2,68 @@
     display: flex;
     justify-content: center;
 }
+
+.headset-icon, .message-icon {
+    font-size: 7em;
+    color: #085cbc;
+}
+
+.contact-title {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #085cbc;
+    text-decoration: underline;
+    text-decoration-skip-ink: auto;
+    text-underline-offset: 0.2em;
+    font-size: 30px;
+}
+
+.contact-label {
+    color: #085cbc;
+    font-size: 25px;
+}
+
+.contact-text {
+    font-size: 18px;
+}
+
+.contact-button {
+    color: white;
+    background-color: #4aa8ef;
+    border: 1px solid #085cbc;
+    border-radius: 10em;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 0.7em 1.4em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 0 0 #085cbc;
+}
+
+.contact-button:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 #085cbc;
+}
+
+.contact-button:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 #085cbc;
+}
+
+.phone-block {
+    margin-right: 50px;
+}
+
+.message-block {
+    margin-left: 50px;
+}
+
+@media (max-width: 1000px) {
+    .wraps-page {
+        flex-direction: column;
+    }
+
+    .phone-block, .message-block {
+        margin: 0px;
+    }
+}
