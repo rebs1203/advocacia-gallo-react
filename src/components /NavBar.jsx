@@ -43,7 +43,7 @@ const NavBar = () => {
                 </div>
                 :
                 <div className='nav-hamburguer'>
-                    <img src="IMG_1984.jpeg" className='logo-hamburguer'/>
+                    <img src={image} className='logo-hamburguer'/>
                     <Menu>
                         <Link id="home" className="menu-item" to="/" >HOME</Link>
                         <Link id="about" className="menu-item" to="/advogado" >ADVOGADO ONLINE</Link>
